@@ -1,7 +1,7 @@
 steps:
 #First Clone from Google Cloud Source Repository  
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone','https://source.developers.google.com/p/credible-bay-346209/r/github_prasadrpm_dockerdemo']
+  args: ['clone','https://github.com/prasadrpm/e-auction-gateway.git']
   
 #Gradle build  
 - name: 'gradle:7.5.0-jdk17'
