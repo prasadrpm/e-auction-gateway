@@ -1,0 +1,23 @@
+server.port: 8095
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+spring:
+  application:
+    name: e-auction  
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: e-auction
+  main:
+    allow-bean-definition-overriding: true
+jwt:
+  secret: eauction
+  validity: 20
+  authDisabled: true 
+  
+           
